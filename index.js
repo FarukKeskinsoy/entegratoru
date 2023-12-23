@@ -6,10 +6,11 @@ const { createSoapClient, getInboxInvoices, getInboxInvoice } = require("./getIn
 const { isEInvoiceUser } = require("./isEInvoiceUser");
 
 const app = express();
+app.use(cors());
 const port = 3008; // Choose your desired port
 
 app.use(bodyParser.json());
-app.use(cors());
+
 
 
 const UYUMSOFT_WSDL_URL =
