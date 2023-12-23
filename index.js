@@ -153,6 +153,6 @@ app.post("/isEInvoiceUser", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+app.listen(process.env.PORT || 5011 ,()=>{
+    console.log("invoice running !")
 });
