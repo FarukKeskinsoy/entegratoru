@@ -11,6 +11,9 @@ const port = 3008; // Choose your desired port
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.send('Invoice is running..');
+});
 
 
 const UYUMSOFT_WSDL_URL =
